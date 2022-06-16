@@ -5,7 +5,10 @@
 }
 
 .sidebar Button {
-  margin-top: 2em;
   margin-left: 1em;
   margin-right: 1em;
+}
+
+.sidebar Button:not(:first-of-type) {
+  margin-top: 1.5em;
 }

@@ -17,3 +17,19 @@ code {
   margin: 0;
   padding: 0;
 }
+
+.App {
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .desktop-schema-name {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop-spacer {
+    display: none;
+  }
+}
