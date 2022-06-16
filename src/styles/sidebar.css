@@ -1,0 +1,11 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar Button {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
