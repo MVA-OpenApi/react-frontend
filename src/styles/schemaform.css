@@ -2,7 +2,7 @@ h1 {
   text-align: center;
 }
 
-form {
+.schema-form {
   display: flex;
   flex-direction: column;
   margin-left: 1em;
@@ -11,7 +11,7 @@ form {
   gap: 2em;
 }
 
-form Button {
+form button {
   align-self: flex-end;
 }
 

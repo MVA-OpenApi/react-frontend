@@ -8,20 +8,18 @@ function SideBar(props) {
 }
 
 function renderSchemaButton(props) {
-  return props.schemas
-    .filter(schema => schema.XLabel === "form")
-    .map((schema, i) => {
-      let variant = props.selectedSchema === i ? "contained" : "outlined";
-      return (
-        <Button
-          key={i}
-          variant={variant}
-          onClick={() => props.setSelectedSchema(i)}
-        >
-          {schema.Name}
-        </Button>
-      );
-    });
+  return props.schemas.map((schema, i) => {
+    let variant = props.selectedSchema === i ? "contained" : "outlined";
+    return (
+      <Button
+        key={i}
+        variant={variant}
+        onClick={() => props.setSelectedSchema(i)}
+      >
+        {schema}
+      </Button>
+    );
+  });
 }
 
 export default SideBar;
