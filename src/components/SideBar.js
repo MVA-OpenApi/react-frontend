@@ -1,25 +1,38 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 import "../styles/sidebar.css";
 
-function SideBar(props) {
-  return <div className="sidebar">{renderSchemaButton(props)}</div>;
-}
-
-function renderSchemaButton(props) {
-  return props.schemas.map((schema, i) => {
-    let variant = props.selectedSchema === i ? "contained" : "outlined";
-    return (
+function SideBar() {
+  return (
+    <div className="sidebar">
       <Button
-        key={i}
-        variant={variant}
-        onClick={() => props.setSelectedSchema(i)}
+        variant="contained"
+        component={Link}
+        to="/store"
+        className="link-button"
       >
-        {schema}
+        Store
       </Button>
-    );
-  });
+      <Button
+        variant="contained"
+        component={Link}
+        to="/store2"
+        className="link-button"
+      >
+        Store 2
+      </Button>
+      <Button
+        variant="contained"
+        component={Link}
+        to="/employees"
+        className="link-button"
+      >
+        Employees
+      </Button>
+    </div>
+  );
 }
 
 export default SideBar;
