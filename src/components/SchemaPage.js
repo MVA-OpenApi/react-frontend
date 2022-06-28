@@ -3,6 +3,8 @@ import { Route, Routes } from "react-router-dom";
 
 import "../styles/loadsubmit.css";
 import LoadSubmit from "./LoadSubmit";
+import ButtonForm from "./ButtonForm";
+import IDForm from "./IDForm";
 
 function SchemaPage(props) {
   const [method, setMethod] = useState("get-all");
@@ -19,15 +21,15 @@ function SchemaPage(props) {
 var showMethodView = (method, props) => {
   switch (method) {
     case "get-all":
-      return "get-all-component";
+      return <ButtonForm />;
     case "get":
-      return "get-component";
+      return <IDForm />;
     case "post":
       return props.children;
     case "put":
       return props.children;
     case "delete":
-      return "delete-component";
+      return <IDForm />;
     default:
       break;
   }
