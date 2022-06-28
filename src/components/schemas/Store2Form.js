@@ -1,20 +1,21 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
+import { Button } from "@mui/material";
 
 import "../../styles/schemaform.css";
 
-function Store2() {
+function Store2Form() {
   return (
     <form className="schema-form">
-      <h1 className="mobile-schema-name">Store 2</h1>
       <TextField label="adress" variant="outlined" />
       <TextField label="annual_revenue" variant="outlined" />
       <TextField label="description" variant="outlined" />
       <TextField label="id" variant="outlined" />
       <TextField label="name" variant="outlined" />
       <TextField label="size" variant="outlined" />
+      <Button variant="contained">Sumbit</Button>
     </form>
   );
 }
 
-export default Store2;
+export default Store2Form;
