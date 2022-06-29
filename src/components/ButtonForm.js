@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 
 import "../styles/schemaform.css";
 
-function ButtonForm() {
+function ButtonForm(props) {
   return (
     <form className="schema-form">
       <Button variant="contained">Sumbit</Button>

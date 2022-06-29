@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 
 import "../../styles/schemaform.css";
 
-function Store() {
+function Store2() {
   return (
     <form className="schema-form">
       <TextField label="adress" variant="outlined" />
@@ -18,4 +18,4 @@ function Store() {
   );
 }
 
-export default Store;
+export default Store2;
