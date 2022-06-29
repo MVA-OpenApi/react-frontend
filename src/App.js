@@ -8,7 +8,6 @@ import SideBar from "./components/SideBar";
 import Store from "./components/schemas/Store";
 import Store2 from "./components/schemas/Store2";
 import Employees from "./components/schemas/Employees";
-import SchemaPage from "./components/SchemaPage";
 
 function App() {
   return (
