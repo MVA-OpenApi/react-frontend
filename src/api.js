@@ -20,6 +20,7 @@ var postItem = async (path, data) => {
   return await axiosInstance.post(path, data);
 };
 
+// TODO check if id is not empty
 // put
 var putItem = async (path, data, id) => {
   return await axiosInstance.put(path + "/" + id, data);

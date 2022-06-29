@@ -54,9 +54,16 @@ function StoreForm(props) {
       <Button
         variant="contained"
         onClick={() =>
-          props.onClickFunc(
-            props.path,
-            { adress, annual_revenue, description, id, name, size },
+          handleOnClick(
+            props,
+            {
+              adress,
+              annual_revenue,
+              description,
+              id,
+              name,
+              size,
+            },
             id
           )
         }
@@ -66,5 +73,14 @@ function StoreForm(props) {
     </form>
   );
 }
+
+var handleOnClick = async (props, data, id) => {
+  if (id === "") {
+    console.log("No id given.");
+    return;
+  }
+  let responseData = await props.onClickFunc(props.path, data, id);
+  props.setReponseData(responseData);
+};
 
 export default StoreForm;

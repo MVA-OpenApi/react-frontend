@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "@mui/material/Button";
-
-import "../styles/loadsubmit.css";
 import { Grid } from "@mui/material";
+
+import { getAllItems } from "../api";
+import "../styles/loadsubmit.css";
 
 function LoadSubmit(props) {
   return (
@@ -18,7 +19,7 @@ function LoadSubmit(props) {
         <Button
           variant="contained"
           className="ls-button"
-          onClick={() => props.setMethod("get-all")}
+          onClick={() => handleGetAll(props)}
         >
           Get all items
         </Button>
@@ -62,5 +63,11 @@ function LoadSubmit(props) {
     </Grid>
   );
 }
+
+var handleGetAll = async props => {
+  props.setMethod("get-all");
+  let responseData = await getAllItems(props.path);
+  props.setResponseData(responseData);
+};
 
 export default LoadSubmit;
