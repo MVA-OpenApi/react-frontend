@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import IDForm from "../IDForm";
 import LoadSubmit from "../LoadSubmit";
-import StoreForm from "./StoreForm";
+import StoreForm from "./schemaforms/StoreForm";
 
 import { getItem, postItem, putItem, deleteItem } from "../../api";
 

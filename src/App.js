@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
-import { Routes, Route, Link, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./styles/index.css";
 

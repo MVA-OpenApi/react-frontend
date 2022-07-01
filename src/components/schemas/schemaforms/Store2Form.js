@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 
-import "../../styles/schemaform.css";
+import "../../../styles/schemaform.css";
 
-function StoreForm(props) {
+function Store2Form(props) {
   // states for all inputs
   const [adress, setAdress] = useState("");
   const [annual_revenue, setAnnual_revenue] = useState("");
@@ -83,4 +83,4 @@ var handleOnClick = async (props, data, id) => {
   props.setReponseData(responseData);
 };
 
-export default StoreForm;
+export default Store2Form;
